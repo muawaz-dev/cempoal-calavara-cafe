@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fredoka, Nunito, Paytone_One } from "next/font/google";
+import { Fredoka, Nunito, Sancreek } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -16,8 +16,8 @@ const nunito = Nunito({
   weight: ["400", "600", "700", "800"],
 });
 
-const paytoneOne = Paytone_One({
-  variable: "--font-paytone",
+const sancreek = Sancreek({
+  variable: "--font-sancreek",
   subsets: ["latin"],
   weight: ["400"],
 });
@@ -25,14 +25,14 @@ const paytoneOne = Paytone_One({
 export const metadata: Metadata = {
   title: "Cempoal Calavera Negra Café",
   description:
-    "Coffee · Music · Art · Chess — A bold Mexican-inspired café at 2374 Agricola St, Halifax, Nova Scotia.",
+    "Art · Chess · Coffee · Music — A cozy neighbourhood café at 2374 Agricola St, Halifax, Nova Scotia.",
 };
 
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${fredoka.variable} ${nunito.variable} ${paytoneOne.variable}`}>
+    <html lang="en" className={`${fredoka.variable} ${nunito.variable} ${sancreek.variable}`}>
       <body className="min-h-screen flex flex-col bg-warm-white text-espresso">
         <Navbar />
         <main className="flex-1">{children}</main>

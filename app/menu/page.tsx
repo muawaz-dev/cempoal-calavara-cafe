@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { Coffee, Flame, Star, ChevronRight } from "lucide-react";
+import { Coffee, Flame, Star } from "lucide-react";
+import CtaBanner from "@/components/CtaBanner";
 
 export const metadata: Metadata = {
   title: "Menu | Cempoal Calavera Negra Café",
@@ -123,7 +123,7 @@ function MenuSection({
         <div>
           <h2
             className={`text-3xl font-bold ${accent ? "text-golden" : "text-espresso"}`}
-            style={{ fontFamily: "var(--font-fredoka)" }}
+            style={{ fontFamily: "var(--font-sancreek)" }}
           >
             {title}
           </h2>
@@ -189,7 +189,7 @@ export default function Menu() {
           </div>
           <h1
             className="text-6xl md:text-7xl font-bold text-golden mb-5 drop-shadow-lg"
-            style={{ fontFamily: "var(--font-fredoka)" }}
+            style={{ fontFamily: "var(--font-sancreek)" }}
           >
             Our Menu
           </h1>
@@ -256,28 +256,12 @@ export default function Menu() {
         </div>
       </section>
 
-      {/* ── CTA ─────────────────────────────────────────────── */}
-      <section className="bg-espresso text-cream py-16 text-center">
-        <div className="max-w-xl mx-auto px-6">
-          <span className="text-4xl block mb-5">☠</span>
-          <h2
-            className="text-3xl font-bold text-golden mb-4"
-            style={{ fontFamily: "var(--font-fredoka)" }}
-          >
-            Ready to Order?
-          </h2>
-          <p className="text-cream/55 mb-8 leading-relaxed">
-            Come visit us at 2374 Agricola St — we can&apos;t wait to serve you.
-          </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 bg-crimson hover:bg-crimson-dark text-cream px-8 py-4 font-bold rounded-full shadow-lg transition-colors"
-            style={{ fontFamily: "var(--font-fredoka)" }}
-          >
-            Find Us <ChevronRight size={18} />
-          </Link>
-        </div>
-      </section>
+      <CtaBanner
+        title="Ready to Visit?"
+        subtitle="Come see us at 2374 Agricola St — we can't wait to serve you."
+        buttonText="Find Us"
+        buttonHref="/contact"
+      />
     </div>
   );
 }

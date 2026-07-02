@@ -43,8 +43,8 @@ export default function Footer() {
             Calavera Negra Café
           </p>
           <p className="text-cream/55 text-sm leading-relaxed">
-            A bold taste of Mexico in the heart of Halifax. Coffee, tacos, music,
-            art & chess — all under one roof.
+            A cozy neighbourhood café in the heart of Halifax. Coffee, art,
+            chess & music — come as you are, stay as long as you like.
           </p>
         </div>
 

@@ -22,15 +22,15 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
             <Image
-            src={"/home/logo.png"}
+            src={"/home/logo2.jpg"}
             alt="Logo"
-            height={60}
-            width={60}
+            height={160}
+            width={160}
             />
 
             
           <div>
-            <span
+            {/* <span
               className="text-xl font-bold text-cream leading-none block tracking-wide"
               style={{ fontFamily: "var(--font-fredoka)" }}
             >
@@ -38,7 +38,7 @@ export default function Navbar() {
             </span>
             <span className="text-golden text-[9px] tracking-[0.3em] uppercase font-bold">
               Calavera Negra
-            </span>
+            </span> */}
           </div>
         </Link>
 

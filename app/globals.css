@@ -3,20 +3,20 @@
 @theme inline {
   --font-sans: var(--font-nunito);
   --font-display: var(--font-fredoka);
-  --font-title: var(--font-paytone);
+  --font-title: var(--font-sancreek);
 
   /* ── Brand Palette ── */
-  --color-crimson:      #C8223A;
-  --color-crimson-dark: #A01830;
-  --color-golden:       #F0AC00;
-  --color-golden-light: #FFD24C;
-  --color-cream:        #FFF5DC;
-  --color-parchment:    #FFF0CC;
-  --color-teal:         #006B6B;
-  --color-teal-dark:    #004F4F;
-  --color-espresso:     #1A0505;
-  --color-warm-white:   #FFFBF4;
-  --color-marigold:     #FF7A00;
+  --color-crimson:      #6E1B2A;
+  --color-crimson-dark: #541520;
+  --color-golden:       #C4882A;
+  --color-golden-light: #DFA850;
+  --color-cream:        #F5E4C8;
+  --color-parchment:    #EDD9AC;
+  --color-teal:         #1E6060;
+  --color-teal-dark:    #144040;
+  --color-espresso:     #120805;
+  --color-warm-white:   #FAF3E4;
+  --color-marigold:     #8B4820;
 }
 
 body {
@@ -24,7 +24,7 @@ body {
   color: var(--color-espresso);
 }
 
-/* Arched text via SVG path — used in hero badge */
+/* Arched text via SVG path */
 .arched-text text {
   font-family: var(--font-fredoka);
   fill: var(--color-golden);

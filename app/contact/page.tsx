@@ -68,7 +68,7 @@ export default function Contact() {
           </div>
           <h1
             className="text-5xl md:text-7xl font-bold text-golden mb-5 drop-shadow-lg"
-            style={{ fontFamily: "var(--font-fredoka)" }}
+            style={{ fontFamily: "var(--font-sancreek)" }}
           >
             Come Find Us
           </h1>
@@ -173,7 +173,7 @@ export default function Contact() {
             </div>
             <h2
               className="text-4xl font-bold text-espresso mb-8"
-              style={{ fontFamily: "var(--font-fredoka)" }}
+              style={{ fontFamily: "var(--font-sancreek)" }}
             >
               Send a Message
             </h2>
@@ -194,7 +194,7 @@ export default function Contact() {
           </div>
           <h2
             className="text-3xl font-bold text-cream mb-8"
-            style={{ fontFamily: "var(--font-fredoka)" }}
+            style={{ fontFamily: "var(--font-sancreek)" }}
           >
             2374 Agricola St — Easy to Find
           </h2>
