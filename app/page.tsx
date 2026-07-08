@@ -7,13 +7,13 @@ export default function Home() {
   return (
     <div>
       {/* ══════════════ HERO ══════════════ */}
-      <section className="bg-crimson min-h-screen overflow-hidden">
+      <section className="bg-crimson h-screen  overflow-hidden">
 
-        <div className="min-h-screen flex flex-col lg:flex-row">
+        <div className="min-h-screen gap-4 sm:gap-12 md:gap-20 lg:gap-0 flex flex-col justify-center xl:flex-row">
 
-          {/* Illustration — top on mobile, left half on desktop */}
-          <div className="relative w-full pt-16 h-[55vw] max-h-72 shrink-0
-                          lg:w-1/2 lg:h-auto lg:max-h-none lg:pt-16 lg:self-stretch">
+          {/* Illustration — top on mobile/tablet, left half on desktop */}
+          <div className="relative w-full h-[65vw] max-h-72 sm:max-h-[22rem] md:max-h-[26rem] lg:max-h-[30rem] shrink-0
+                          xl:w-1/2 xl:h-auto xl:max-h-none xl:pt-16 xl:self-stretch">
             <Image
               src="/home/hero-design.png"
               alt="Cempoal Calavera Negra Café"
@@ -23,13 +23,13 @@ export default function Home() {
             />
           </div>
 
-          {/* Text — below image on mobile, right half on desktop */}
-          <div className="flex-1 w-full lg:w-1/2 lg:flex-none flex flex-col justify-center
-                          px-6 sm:px-10 lg:px-12 py-8 lg:py-0 lg:pt-20 pb-10">
+          {/* Text — below image on mobile/tablet, right half on desktop */}
+          <div className="w-full xl:w-1/2 xl:flex-1 flex flex-col justify-center
+                          px-6 sm:px-10 lg:px-12 pt-6 pb-10 xl:pt-20 xl:pb-0">
 
             {/* TACOS & VIBES */}
             <h1
-              className="text-5xl sm:text-7xl lg:text-8xl xl:text-9xl font-bold leading-[0.88] text-golden mb-5"
+              className="text-5xl  sm:text-7xl lg:text-8xl xl:text-9xl font-bold leading-[0.88] text-golden mb-5"
               style={{
                 fontFamily: "var(--font-sancreek)",
                 textShadow: "3px 3px 0 #5a0a0a, 6px 6px 0 #2d0404",
